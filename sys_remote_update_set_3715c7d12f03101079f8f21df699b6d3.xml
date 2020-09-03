@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-09-03 21:51:38">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Clean Panel Demo</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>53a307912f03101079f8f21df699b605</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-09-03 21:51:38</sys_created_on>
+<sys_id>3715c7d12f03101079f8f21df699b6d3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-09-03 21:51:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fa80bdb42f4b501079f8f21df699b69a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;/* SCSS colors */
+
+$panel-bg: white;
+$gray-lighter: #f1f1f1;
+
+
+/* Outer Panel */
+
+.clean-panel{
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .15); //Sets drop shadow
+    background-color: $panel-bg; //background color for panel set in Portal SCSS variables
+    border-radius: 0; //Cause I like sharp edges
+    border: 1px solid $gray-lighter; //subtle border to finish it off
+  	display: flex; //Helps with how content is displayed
+    padding: 15px; // Give your content space to breathe
+  	flex-direction: column; //Keeps the heading and body from trying to sit beside each other
+  	margin-top: 30px; //honestly this is here so I could get a better screenshot. YMMV
+}
+
+/* Panel Heading with bottom border */
+
+.cp-title{
+  border-bottom: 2px solid $brand-primary;
+  padding-bottom: 5px; //Puts space between your title and the border
+  width: 100%; 
+  	
+}
+
+// This takes away the default margins set by OOB styles
+.cp-title h2{
+  	margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+/* Panel Content */
+.cp-content{
+	padding: 15px;
+  margin-bottom: 40px;  
+}
+
+/* Panel Footer */
+
+.cp-footer{
+  border-top: 1px solid $gray-lighter;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;cp-demo&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Clean Panel Demo&lt;/name&gt;&lt;option_schema&gt;[{"name":"show_content","section":"other","default_value":"true","label":"Show Content","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-09-02 02:25:28&lt;/sys_created_on&gt;&lt;sys_id&gt;fa80bdb42f4b501079f8f21df699b69a&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Clean Panel Demo&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa80bdb42f4b501079f8f21df699b69a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-03 21:51:05&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="clean-panel"&gt;
+    &lt;div class="cp-title"&gt;
+      &lt;h2&gt;
+        My Demo Panel Title
+      &lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="cp-content"&gt;
+      &lt;span class="cp-body"&gt;
+        Bacon ipsum dolor amet pork doner salami swine frankfurter, 
+        ball tip porchetta shank sausage.
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cp-footer"&gt;
+      &lt;button class="btn btn-primary"&gt;
+        Click me!
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary"&gt;
+        No click me!
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-157701809</payload_hash>
+<remote_update_set display_value="Clean Panel Demo">3715c7d12f03101079f8f21df699b6d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-09-03 21:51:38</sys_created_on>
+<sys_id>7b15c7d12f03101079f8f21df699b6d3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17455f3a7a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-09-03 21:51:38</sys_updated_on>
+<table/>
+<target_name>Clean Panel Demo</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>000547d143031010464746fac34cb2ef</update_guid>
+<update_guid_history>000547d143031010464746fac34cb2ef:-157701809,681931bcea4b50108b19e50452bc2c0b:-905079230,dfd7317c6e4b50106bd01a814fc1c3cb:-255363514,e4a73db8944b50104df67ba6ebf3369c:-1186551270,9e87b93c004b50101dcd9c381d50807e:-1846173549,7467b53c0e4b50108892ab547e0f6424:625116274,0f07b53c2e4b5010c80e0bf495ef191c:-1701839346,52e639f8aa4b50109d4fa29fdaabc639:1532684121,39e6f1f8184b5010029e233bdc547ea0:-112057627,3f963db86f4b5010b9e9506cf3dd2256:1015261056,643639b8af4b50104c4e613ff0be41a4:-107156488,0e1679f8f54b50108a54c8c8e30a4ab8:-324122659,46f57578bd4b5010901d04bdcaaf680f:43130548,979571f8c44b5010919fcc33413dbc55:-1006017468,4d7571f8094b5010b97d856343cc074d:397842305,ff053db8bd4b5010f5d5680849cb8a4d:899617077,51c4f578a84b501091dcd10a6f1f41eb:-2121526157,7473bd38924b5010ae889f93c03c78a8:868550863,8962f538ac4b50102458af7ae987bd9e:-148333733,05323538234b5010f8d310afedf696fe:-1065185316,fb90f9b4014b50100d7a6d6638ebaf1e:-1684853902</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
